@@ -2,7 +2,6 @@
 
 > SUTD 교환학기 NLP Final Project (팀 4인) — 본인 담당: Task 2 (English NLI Fine-tuning)
 
----
 
 ## 1. 프로젝트 개요
 
@@ -17,7 +16,6 @@ Full fine-tuning은 성능은 좋지만 모델 크기가 커질수록 비용이 
 | Task 3 | 15개 언어 zero-shot / per-language / unified 멀티링구얼 실험 | tokenizer fertility ↔ accuracy 음의 상관관계 규명 |
 | Extension | LoRA vs Full FT, GPT-2 vs Qwen2-1.5B 비교 | Qwen2 LoRA로 크로스링구얼 성능 대폭 개선  |
 
----
 
 ## 2. 내 기여 — Task 2: English NLI Fine-tuning
 
@@ -55,7 +53,6 @@ Label: (entailment / neutral / contradictory)
 GPT-2는 1 epoch의 supervised fine-tuning만으로도 English NLI에서 강한 성능(81%+)에 도달하며,
 이는 이후 Task 3(멀티링구얼)과 Extension(LoRA) 실험의 baseline이 됨.
 
----
 
 ## 3. 팀 프로젝트 전체 파이프라인
 
@@ -76,10 +73,9 @@ GPT-2는 1 epoch의 supervised fine-tuning만으로도 English NLI에서 강한 
 - Qwen2-1.5B LoRA: 멀티링구얼 프리트레이닝 덕분에 English-only 학습만으로도 강한 zero-shot 크로스링구얼 전이 (다수 언어 70~90%)
 - 결론: 크로스링구얼 성능을 좌우하는 건 fine-tuning 전략보다 베이스 모델의 멀티링구얼 프리트레이닝 여부
 
----
 
 ## 4. 기술 스택
 `PyTorch` `HuggingFace Transformers` `PyTorch Lightning` `AdamW (custom impl.)` `Google Colab (T4 GPU)`
 
 ## 5. Report
-"Parameter-Efficient Multilingual Adaptation: A Comparative Study of GPT-2 and Qwen2–1.5B on XNLI" — 팀 공동 작성, 본인은 Task 2 섹션 및 관련 실험 작성
+"Parameter-Efficient Multilingual Adaptation: A Comparative Study of GPT-2 and Qwen2–1.5B on XNLI" (팀 공동 작성, 본인은 Task 2 섹션 및 관련 실험 작성)
