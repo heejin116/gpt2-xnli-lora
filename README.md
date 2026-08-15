@@ -84,4 +84,5 @@ GPT-2는 1 epoch의 supervised fine-tuning만으로도 English NLI에서 강한 
 
 
 ## 5. Report
-"Parameter-Efficient Multilingual Adaptation: A Comparative Study of GPT-2 and Qwen2–1.5B on XNLI" (팀 공동 작성, 본인은 Task 2 섹션 및 관련 실험 작성)
+[Parameter-Efficient Multilingual Adaptation: A Comparative Study of GPT-2 and Qwen2–1.5B on XNLI](https://github.com/heejin116/gpt2-xnli-lora/blob/main/report.pdf)
+  (팀 공동 작성, 본인은 Task 2 섹션 및 관련 실험 작성)
